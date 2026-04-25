@@ -1,6 +1,6 @@
 # skillsense-ai
 SkillSense AI is a Streamlit-based system that evaluates real skill proficiency by comparing resumes with job descriptions. It uses conversational assessment, skill scoring, gap analysis, and adjacent skill intelligence to generate personalized, time-bound learning plans with visual insights.
-# 🎯 SkillSense AI — Skill Assessment & Personalized Learning Agent
+# 🎯 SkillSense AI — Skill Assessment & Personalized Learning Agen
 
 ## 📌 Problem Statement
 A resume tells you what someone *claims* to know — not how well they actually know it. SkillSense AI bridges this gap by conversationally assessing real proficiency on each required skill, identifying gaps, and generating a personalized learning roadmap.
