@@ -57,7 +57,7 @@ Dashboard (Plotly Charts + Learning Plan)
 
 ## ⚙️ Local Setup
 1. Clone the repo:
-git clone https://github.com/YOUR_USERNAME/skill-assess-agent.git
+git clone https://github.com/fahadkhanarhama-crypto/skill-assess-agent.git
 cd skill-assess-agent
 
 2. Install dependencies:
@@ -105,10 +105,5 @@ Interactive FAQ Accordion: Built a dynamic Frequently Asked Questions component 
 Education
 Bachelor of Computer Applications (BCA): Career College, Bhopal | Expected 07/2028
 
-
-
 ## 👩‍💻 Built By
 Arhama Khan — Solo participant, Catalyst Hackathon by Deccan AI
-- 86–100: Expert-level with optimization thinking
-
-## 🏗️ Architecture
