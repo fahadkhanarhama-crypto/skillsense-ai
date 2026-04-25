@@ -34,19 +34,7 @@ Score Breakdown:
 - 66–85: Strong implementation knowledge
 
 #Architecture:
-User Input (JD + Resume)
-↓
-Text Extraction (PyPDF2)
-↓
-System Prompt Builder
-↓
-OpenRouter API (GPT-4o-mini)
-↓
-Conversational Assessment Engine
-↓
-JSON Report Generator
-↓
-Dashboard (Plotly Charts + Learning Plan)
+User Input (JD + Resume) -> Text Extraction (PyPDF2) -> System Prompt Builder -> OpenRouter API (GPT-4o-mini) -> Conversational Assessment Engine -> JSON Report Generator -> Dashboard (Plotly Charts + Learning Plan)
 
 ## 🛠️ Tech Stack
 - **Frontend:** Streamlit
