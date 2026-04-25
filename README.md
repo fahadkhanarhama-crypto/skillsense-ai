@@ -150,7 +150,7 @@ Bachelor of Computer Applications (BCA): Career College, Bhopal | Expected 07/20
   <img width="1743" height="667" alt="Screenshot (117)" src="https://github.com/user-attachments/assets/80b591e4-28f4-4324-b1d1-11a65635f78c" />
   <img width="1704" height="674" alt="Screenshot (118)" src="https://github.com/user-attachments/assets/30235c4b-6910-4dd0-88b5-5d3fbc4d45a3" />
   <img width="1165" height="599" alt="Screenshot (119)" src="https://github.com/user-attachments/assets/a3825378-d131-4a5d-ad06-0cfb7ffeb342" />
-  <img width="1165" height="599" alt="Screenshot (119)" src="https://github.com/user-attachments/assets/e8436641-a1bd-4b6d-9ed5-bbe533c44dca" />
+  <img width="1750" height="560" alt="Screenshot (120)" src="https://github.com/user-attachments/assets/35d47814-24c4-4213-a902-dd7f72dc50b4" />
   <img width="1750" height="761" alt="Screenshot (121)" src="https://github.com/user-attachments/assets/898965fb-ec21-4999-b6d5-4ebe282022db" />
   <img width="1734" height="698" alt="Screenshot (122)" src="https://github.com/user-attachments/assets/574ebc89-2c5c-4947-a59b-137ee1dc115f" />
 
