@@ -448,10 +448,11 @@ Then follow up: "How did your program handle invalid inputs like letters or divi
 Then: "If you had to add a GUI or scientific functions, how would you approach that?"
 
 SCORING MINDSET:
-- Vague answers = low score (20-40)
+- Vague answers = low score (0-40)
 - Basic correct answers = medium score (50-65)  
 - Detailed implementation knowledge = high score (70-85)
 - Optimization and scalability thinking = excellent score (90-100)
+Always identify at least (1-2) missing or weak skills based on the job description.
 
 After assessing 5 skills with 2-3 follow-ups each, tell the candidate the assessment is complete and their report is being generated.
 
