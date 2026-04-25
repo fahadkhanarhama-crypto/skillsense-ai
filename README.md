@@ -36,10 +36,10 @@ Each skill is assessed across 3 dimensions:
 - **Scalability (25%)** – Ability to optimize, extend, and improve solutions  
 
 ### Score Interpretation:
-- **0–40** → Limited or no practical understanding  
-- **41–65** → Basic working knowledge  
-- **66–85** → Strong implementation skills  
-- **86–100** → Advanced proficiency with optimization and scalability  
+- Vague answers = low score (0-40)
+- Basic correct answers = medium score (50-65)  
+- Detailed implementation knowledge = high score (70-85)
+- Optimization and scalability thinking = excellent score (90-100)
 
 ### Final Score:
 The overall Job Readiness Score is calculated as the weighted average of all skill scores.
@@ -97,6 +97,7 @@ streamlit run app.py
 
 ## 📁 Sample Inputs
 **Sample JD:** We are looking for a motivated and enthusiastic **Web Development Intern** who is eager to learn, build, and grow in a fast-paced environment. The ideal candidate should have a passion for web technologies and a strong willingness to turn ideas into functional, user-friendly websites.
+<img width="1794" height="740" alt="Screenshot (116)" src="https://github.com/user-attachments/assets/d8f002a2-8bba-4dfc-8769-a7b39c3df078" />
 
 ### **Key Responsibilities**
 * Assist in the design and development of responsive websites and web applications
@@ -145,6 +146,19 @@ Bachelor of Computer Applications (BCA): Career College, Bhopal | Expected 07/20
   - Phase 1: Fundamentals (2 weeks)
   - Phase 2: Projects (3 weeks)
   - Phase 3: Advanced + Deployment (2 weeks)
+
+  <img width="1743" height="667" alt="Screenshot (117)" src="https://github.com/user-attachments/assets/80b591e4-28f4-4324-b1d1-11a65635f78c" />
+  <img width="1704" height="674" alt="Screenshot (118)" src="https://github.com/user-attachments/assets/30235c4b-6910-4dd0-88b5-5d3fbc4d45a3" />
+  <img width="1165" height="599" alt="Screenshot (119)" src="https://github.com/user-attachments/assets/a3825378-d131-4a5d-ad06-0cfb7ffeb342" />
+  <img width="1165" height="599" alt="Screenshot (119)" src="https://github.com/user-attachments/assets/e8436641-a1bd-4b6d-9ed5-bbe533c44dca" />
+  <img width="1750" height="761" alt="Screenshot (121)" src="https://github.com/user-attachments/assets/898965fb-ec21-4999-b6d5-4ebe282022db" />
+  <img width="1734" height="698" alt="Screenshot (122)" src="https://github.com/user-attachments/assets/574ebc89-2c5c-4947-a59b-137ee1dc115f" />
+
+
+
+
+
+
 
 ## 👩‍💻 Built By
 Arhama Khan — Solo participant, Catalyst Hackathon by Deccan AI
