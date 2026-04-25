@@ -1,6 +1,6 @@
 # skillsense-ai
 SkillSense AI is a Streamlit-based system that evaluates real skill proficiency by comparing resumes with job descriptions. It uses conversational assessment, skill scoring, gap analysis, and adjacent skill intelligence to generate personalized, time-bound learning plans with visual insights.
-# 🎯 SkillSense AI — Skill Assessment & Personalized Learning Agen
+# 🎯 SkillSense AI — Skill Assessment & Personalized Learning Agent
 
 ## 📌 Problem Statement
 A resume tells you what someone *claims* to know — not how well they actually know it. SkillSense AI bridges this gap by conversationally assessing real proficiency on each required skill, identifying gaps, and generating a personalized learning roadmap.
@@ -28,14 +28,52 @@ Each skill is assessed across 3 dimensions:
 | Problem-solving | How they handled edge cases and errors |
 | Scalability | How they would improve or extend their work |
 
-Score Breakdown:
-- 0–40: Vague or no understanding
-- 41–65: Basic working knowledge
-- 66–85: Strong implementation knowledge
+SkillSense AI evaluates candidates using a structured, multi-dimensional scoring model:
 
-**#Architecture:**
+Each skill is assessed across 3 dimensions:
+- **Implementation (40%)** – Ability to build and apply the skill in real projects  
+- **Problem-Solving (35%)** – Handling edge cases, debugging, and logical reasoning  
+- **Scalability (25%)** – Ability to optimize, extend, and improve solutions  
 
-User Input (JD + Resume) -> Text Extraction (PyPDF2) -> System Prompt Builder -> OpenRouter API (GPT-4o-mini) -> Conversational Assessment Engine -> JSON Report Generator -> Dashboard (Plotly Charts + Learning Plan)
+### Score Interpretation:
+- **0–40** → Limited or no practical understanding  
+- **41–65** → Basic working knowledge  
+- **66–85** → Strong implementation skills  
+- **86–100** → Advanced proficiency with optimization and scalability  
+
+### Final Score:
+The overall Job Readiness Score is calculated as the weighted average of all skill scores.
+
+💡 Unlike traditional ATS systems, SkillSense AI uses LLM-based semantic evaluation to assess *depth of understanding*, not just keyword presence.
+# 🏗️ Architecture
+<img width="761" height="210" alt="unnamed (1)" src="https://github.com/user-attachments/assets/efd9f827-967c-44a2-935f-b9c5494d4822" />
+
+SkillSense AI follows a modular AI-driven architecture:
+
+1. **Input Layer**
+   - Resume (PDF/Text)
+   - Job Description
+
+2. **Processing Layer**
+   - Text extraction using PyPDF2
+   - Skill and keyword identification
+
+3. **AI Engine**
+   - Prompt engineering layer
+   - OpenRouter API (GPT-4o-mini) for semantic analysis
+   - Conversational assessment generation
+
+4. **Scoring Engine**
+   - Multi-dimensional evaluation (Implementation, Problem-solving, Scalability)
+   - Job Readiness Score calculation
+
+5. **Output Layer**
+   - JSON report generation
+   - Visualization via Plotly (Bar, Radar, Pie charts)
+   - Personalized learning roadmap
+
+6. **User Interface**
+   - Interactive dashboard built with Streamlit
 
 ## 🛠️ Tech Stack
 - **Frontend:** Streamlit
@@ -93,6 +131,20 @@ Travel Destination Platform: Developed a multi-page responsive website featuring
 Interactive FAQ Accordion: Built a dynamic Frequently Asked Questions component using JavaScript to improve user engagement and information accessibility.
 Education
 Bachelor of Computer Applications (BCA): Career College, Bhopal | Expected 07/2028
+
+📤**##Sample Output**
+- **Job Readiness Score:** 72/100  
+- **Top Strengths:** HTML, CSS, Communication  
+- **Skill Gaps:** JavaScript, Git, React  
+- **Recommended Actions:**
+  - Build 2 JavaScript projects
+  - Learn Git version control
+  - Practice debugging exercises  
+
+- **Learning Plan:**
+  - Phase 1: Fundamentals (2 weeks)
+  - Phase 2: Projects (3 weeks)
+  - Phase 3: Advanced + Deployment (2 weeks)
 
 ## 👩‍💻 Built By
 Arhama Khan — Solo participant, Catalyst Hackathon by Deccan AI
