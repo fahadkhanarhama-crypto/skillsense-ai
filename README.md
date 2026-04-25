@@ -6,7 +6,7 @@ SkillSense AI is a Streamlit-based system that evaluates real skill proficiency 
 A resume tells you what someone *claims* to know — not how well they actually know it. SkillSense AI bridges this gap by conversationally assessing real proficiency on each required skill, identifying gaps, and generating a personalized learning roadmap.
 
 ## 🚀 Live Demo
-[Add your Streamlit URL here after deployment]
+https://skillsense-ai-6urfevr9akha5qyelbfbgd.streamlit.app/
 
 ## 🎥 Demo Video
 [Add your video link here]
