@@ -187,6 +187,7 @@ st.markdown("""
 
 # ─── Session State Init ──────────────────────────────────────────────────────
 for key, val in {
+    "skill_gaps": [],
     "messages": [],
     "assessment_started": False,
     "assessment_complete": False,
@@ -260,38 +261,42 @@ def generate_report():
         if m['role'] != 'system'
     )
 
-    prompt = f"""Based on this skill assessment conversation, extract the resume mentioned projects first, then suggest NEW and DIFFERENT projects that the candidate should build to improve their skills for this job role.
+    prompt = f"""You are a calibrated skill assessment expert. Based on this conversation, return ONLY valid JSON with accurate scoring.
 
 {conversation}
 
-Return ONLY a valid JSON object with no extra text or markdown:
+SCORING CALIBRATION:
+- 0-30: No knowledge or completely vague answers
+- 31-50: Basic knowledge, struggled with follow-ups
+- 51-70: Good understanding, answered most questions well
+- 71-85: Strong knowledge, clear implementation understanding
+- 86-100: Expert level, discussed optimizations and scalability
+
+Return ONLY this JSON structure with NO extra text:
 {{
-  "skill_scores": {{"SkillName": score_0_to_100}},
+  "skill_scores": {{"SkillName": score_integer_0_to_100}},
   "readiness_score": number_0_to_100,
+  "skill_gaps": ["skill_name_with_low_score"],
   "adjacent_skills": ["skill1", "skill2", "skill3"],
-  "projects": [
-    "NEW project 1 that is NOT in the resume - with brief description",
-    "NEW project 2 that is NOT in the resume - with brief description",
-    "NEW project 3 that is NOT in the resume - with brief description"
-  ],
+  "projects": ["NEW project 1", "NEW project 2", "NEW project 3"],
   "learning_plan": [
     {{
       "phase": "Phase 1: Foundations",
       "duration": "2 weeks",
       "topics": ["topic1", "topic2"],
-      "resources": ["https://resource-link-1.com", "https://resource-link-2.com"]
+      "resources": ["https://resource1.com", "https://resource2.com"]
     }},
     {{
       "phase": "Phase 2: Practice",
       "duration": "3 weeks",
       "topics": ["topic1"],
-      "resources": ["https://resource-link.com"]
+      "resources": ["https://resource.com"]
     }},
     {{
       "phase": "Phase 3: Projects",
       "duration": "2 weeks",
       "topics": ["topic1"],
-      "resources": ["https://resource-link.com"]
+      "resources": ["https://resource.com"]
     }}
   ]
 }}"""
@@ -305,6 +310,7 @@ Return ONLY a valid JSON object with no extra text or markdown:
         st.session_state.adjacent_skills = data.get("adjacent_skills", [])
         st.session_state.projects = data.get("projects", [])
         st.session_state.learning_plan = data.get("learning_plan", [])
+        st.session_state.skill_gaps = data.get("skill_gaps", [])
         st.session_state.assessment_complete = True
     except:
         st.error("Could not parse assessment report. Please try again.")
@@ -377,6 +383,12 @@ def show_dashboard():
         st.markdown('<div class="metric-card">', unsafe_allow_html=True)
         st.metric("❌ Skill Gaps", gaps)
         st.markdown('</div>', unsafe_allow_html=True)
+        # Show Skill Gaps Only If They Exist
+    weak_skills = {skill: score for skill, score in scores.items() if score < 40}
+    if weak_skills:
+        st.markdown("### ⚠️ Skills That Need Improvement")
+        for skill, score in weak_skills.items():
+            st.warning(f"📍 {skill} — Score: {score}/100")
 
     st.markdown("### 📈 Skill Analysis")
     tab1, tab2, tab3 = st.tabs(["📊 Bar Chart", "🕸 Radar Chart", "🥧 Gap Analysis"])
@@ -509,7 +521,7 @@ if st.session_state.assessment_complete:
     st.markdown("---")
     if st.button("🔄 Start New Assessment", use_container_width=True):
         for key in ["messages", "assessment_started", "assessment_complete",
-                    "skill_scores", "readiness_score", "learning_plan",
-                    "adjacent_skills", "projects"]:
+            "skill_scores", "readiness_score", "learning_plan",
+            "adjacent_skills", "projects", "skill_gaps"]:
             st.session_state[key] = [] if key in ["messages", "learning_plan", "adjacent_skills", "projects"] else False if "started" in key or "complete" in key else {} if key == "skill_scores" else 0
         st.rerun()
