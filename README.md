@@ -9,7 +9,7 @@ A resume tells you what someone *claims* to know — not how well they actually 
 https://skillsense-ai-6urfevr9akha5qyelbfbgd.streamlit.app/
 
 ## 🎥 Demo Video
-[Add your video link here]
+https://youtu.be/rXCwyjrDpWw
 
 ## ✨ Features
 - 📄 Upload Resume + Job Description (PDF or text)
