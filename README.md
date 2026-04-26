@@ -11,6 +11,65 @@ https://skillsense-ai-6urfevr9akha5qyelbfbgd.streamlit.app/
 ## 🎥 Demo Video
 https://youtu.be/rXCwyjrDpWw
 
+##Drive Link (Zip Project Folder)
+https://drive.google.com/file/d/1EWLlsxrBnr1UWFBwXaEN6S5KoP40lUcr/view?usp=drive_link
+
+**🧠 Approach**
+
+🔍 User-First Thinking
+The foundation of SkillSense AI was built by thinking like an end user, not just a developer.
+Most existing systems rely on keyword matching, where resumes are scanned for surface-level terms rather than actual capability. As a user, this creates a major gap — your skills are claimed but never truly assessed, validated, or understood.
+SkillSense AI was designed to solve exactly this problem.
+
+Instead of asking “What keywords exist?”, the system asks:
+“How well does the candidate actually understand and apply these skills?”
+This shift led to an approach focused on:
+Deep skill assessment rather than shallow filtering
+Contextual understanding instead of static matching
+Adaptive questioning to evaluate real proficiency
+
+💬 Conversational Intelligence over Static Evaluation
+Rather than building a rigid evaluation system, the platform uses a dynamic, conversational assessment model.
+The AI interacts with the user like a technical interviewer, asking:
+Implementation-focused questions
+Scenario-based challenges
+Follow-up questions to test depth and clarity
+This ensures evaluation across:
+Conceptual understanding
+Practical application
+Problem-solving ability
+
+🎯 Accessibility & Simplicity
+A key design decision was to make the system accessible to everyone, not just technical experts.
+AI tools are often perceived as complex or requiring prior learning. SkillSense AI removes this barrier by providing:
+A clean, intuitive interface
+Support for both plain text and PDF inputs
+A guided, conversational flow that requires no prior training
+Whether the user is a beginner or an experienced professional, the platform enables them to:
+Easily input their data
+Undergo assessment
+Receive a structured performance report
+
+📊 Insight-Driven Output
+The final approach emphasizes clarity and actionability.
+Instead of long, unstructured text outputs, the system delivers:
+Skill-wise scores
+Strength and gap analysis
+Visual dashboards
+A structured “report card” of performance
+This transforms raw evaluation into actionable insights, helping users clearly understand:
+Where they stand
+What they lack
+What they should do next
+
+🚀 Summary
+SkillSense AI moves beyond traditional ATS systems by combining:
+User-centric design
+Conversational AI-based evaluation
+Structured, insight-driven outputs
+
+The result is a system that doesn’t just process resumes — it understands, evaluates, and guides.
+
 ## ✨ Features
 - 📄 Upload Resume + Job Description (PDF or text)
 - 🤖 AI-powered conversational skill assessment
@@ -47,6 +106,16 @@ Each skill is assessed across 3 dimensions:
 The overall Job Readiness Score is calculated as the weighted average of all skill scores.
 
 💡 Unlike traditional ATS systems, SkillSense AI uses LLM-based semantic evaluation to assess *depth of understanding*, not just keyword presence.
+
+### Trade-offs & Decisions
+| Decision | Why |
+|----------|-----|
+| OpenRouter over direct API | Flexibility to switch models, better free tier |
+| Streamlit over custom frontend | Faster development, built-in components |
+| LLM-based scoring over keyword matching | Semantic understanding over surface matching |
+| GPT-4o-mini over larger models | Cost effective, fast, sufficient for assessment |
+| JSON output parsing | Structured data enables rich visualizations |
+
 # 🏗️ Architecture
 <img width="761" height="210" alt="unnamed (1)" src="https://github.com/user-attachments/assets/efd9f827-967c-44a2-935f-b9c5494d4822" />
 
