@@ -35,11 +35,13 @@ Each skill is assessed across 3 dimensions:
 - **Problem-Solving (35%)** – Handling edge cases, debugging, and logical reasoning  
 - **Scalability (25%)** – Ability to optimize, extend, and improve solutions  
 
-### Score Interpretation:
-- Vague answers = low score (0-40)
-- Basic correct answers = medium score (50-65)  
-- Detailed implementation knowledge = high score (70-85)
-- Optimization and scalability thinking = excellent score (90-100)
+##SCORING CALIBRATION:
+- 0-30: No knowledge or completely vague answers
+- 31-50: Basic knowledge, struggled with follow-ups
+- 51-70: Good understanding, answered most questions well
+- 71-85: Strong knowledge, clear implementation understanding
+- 86-100: Expert level, discussed optimizations and scalability
+
 
 ### Final Score:
 The overall Job Readiness Score is calculated as the weighted average of all skill scores.
@@ -135,14 +137,25 @@ Bachelor of Computer Applications (BCA): Career College, Bhopal | Expected 07/20
 
 📤**##Sample Output**
 - **Job Readiness Score:** 72/100  
-- **Top Strengths:** HTML, CSS, Communication  
-- **Skill Gaps:** JavaScript, Git, React  
-- **Recommended Actions:**
+- **Strong Skills:** HTML, CSS, Communication  
+- **Skill Gaps:** JavaScript, Git, React
+
+  **Skills That Need Improvement:**
+📍JavaScript — Score: 20/100
+📍React.js — Score: 30/100
+
+**Skill Analysis:**
+- Skill Analysis is done and visuallly represented using bar Chart, Radar Chart and Pie Chart.
+
+**Adjacent Skills To Learn Next:**
+-  JavaScript, Git, React
+  
+- **Suggested Projects To Build:**
   - Build 2 JavaScript projects
   - Learn Git version control
   - Practice debugging exercises  
 
-- **Learning Plan:**
+- **Personalised Learning Roadmap:**
   - Phase 1: Fundamentals (2 weeks)
   - Phase 2: Projects (3 weeks)
   - Phase 3: Advanced + Deployment (2 weeks)
@@ -151,6 +164,7 @@ Bachelor of Computer Applications (BCA): Career College, Bhopal | Expected 07/20
   <img width="1704" height="674" alt="Screenshot (118)" src="https://github.com/user-attachments/assets/30235c4b-6910-4dd0-88b5-5d3fbc4d45a3" />
   <img width="1165" height="599" alt="Screenshot (119)" src="https://github.com/user-attachments/assets/a3825378-d131-4a5d-ad06-0cfb7ffeb342" />
   <img width="1750" height="560" alt="Screenshot (120)" src="https://github.com/user-attachments/assets/35d47814-24c4-4213-a902-dd7f72dc50b4" />
+  <img width="1239" height="453" alt="Screenshot (123)" src="https://github.com/user-attachments/assets/023ac0aa-197a-42b9-9415-81d7f3a28365" />
   <img width="1750" height="761" alt="Screenshot (121)" src="https://github.com/user-attachments/assets/898965fb-ec21-4999-b6d5-4ebe282022db" />
   <img width="1734" height="698" alt="Screenshot (122)" src="https://github.com/user-attachments/assets/574ebc89-2c5c-4947-a59b-137ee1dc115f" />
 
