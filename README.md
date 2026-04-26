@@ -11,12 +11,13 @@ https://skillsense-ai-6urfevr9akha5qyelbfbgd.streamlit.app/
 ## 🎥 Demo Video
 https://youtu.be/rXCwyjrDpWw
 
-##Drive Link (Zip Project Folder)
+**##Drive Link** (Zip Project Folder)
+
 https://drive.google.com/file/d/1EWLlsxrBnr1UWFBwXaEN6S5KoP40lUcr/view?usp=drive_link
 
 **🧠 Approach**
 
-🔍 User-First Thinking
+**🔍 User-First Thinking:**
 The foundation of SkillSense AI was built by thinking like an end user, not just a developer.
 Most existing systems rely on keyword matching, where resumes are scanned for surface-level terms rather than actual capability. As a user, this creates a major gap — your skills are claimed but never truly assessed, validated, or understood.
 SkillSense AI was designed to solve exactly this problem.
@@ -28,7 +29,8 @@ Deep skill assessment rather than shallow filtering
 Contextual understanding instead of static matching
 Adaptive questioning to evaluate real proficiency
 
-💬 Conversational Intelligence over Static Evaluation
+**💬 Conversational Intelligence over Static Evaluation:**
+
 Rather than building a rigid evaluation system, the platform uses a dynamic, conversational assessment model.
 The AI interacts with the user like a technical interviewer, asking:
 Implementation-focused questions
@@ -39,7 +41,8 @@ Conceptual understanding
 Practical application
 Problem-solving ability
 
-🎯 Accessibility & Simplicity
+**🎯 Accessibility & Simplicity:**
+
 A key design decision was to make the system accessible to everyone, not just technical experts.
 AI tools are often perceived as complex or requiring prior learning. SkillSense AI removes this barrier by providing:
 A clean, intuitive interface
@@ -50,7 +53,8 @@ Easily input their data
 Undergo assessment
 Receive a structured performance report
 
-📊 Insight-Driven Output
+**📊 Insight-Driven Output:**
+
 The final approach emphasizes clarity and actionability.
 Instead of long, unstructured text outputs, the system delivers:
 Skill-wise scores
@@ -62,7 +66,7 @@ Where they stand
 What they lack
 What they should do next
 
-🚀 Summary
+**🚀 Summary:**
 SkillSense AI moves beyond traditional ATS systems by combining:
 User-centric design
 Conversational AI-based evaluation
@@ -204,12 +208,11 @@ Interactive FAQ Accordion: Built a dynamic Frequently Asked Questions component 
 Education
 Bachelor of Computer Applications (BCA): Career College, Bhopal | Expected 07/2028
 
-📤**##Sample Output**
+**📤##Sample Output**
 - **Job Readiness Score:** 72/100  
 - **Strong Skills:** HTML, CSS, Communication  
 - **Skill Gaps:** JavaScript, Git, React
-
-  **Skills That Need Improvement:**
+- **Skills That Need Improvement:** (This section is displayed only incase the candiadte lacks improvement in certains skills)
 📍JavaScript — Score: 20/100
 📍React.js — Score: 30/100
 
